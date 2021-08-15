@@ -1338,11 +1338,24 @@ a > svg:hover{
 
 .hero-media {
 	position: relative;
-	height: 200px;
+	height: 160px;
 	/* margin-top: 40px; */
 	background: #fff;
 	border-radius: 4px 4px 0 0
 }
+
+@media (min-width:400px){
+	.hero-media{
+		height: 200px;
+	}
+}
+
+@media (min-width:500px){
+	.hero-media{
+		height: 250px;
+	}
+}
+
 
 .hero-media::before {
 	content: '';
@@ -1361,7 +1374,7 @@ a > svg:hover{
 	}
 }
 
-@media (min-width: 641px) {
+@media (min-width: 800px) {
 	.hero {
 		/* padding-top: 80px */
 	}
@@ -1479,6 +1492,53 @@ a > svg:hover{
 .feature-extended-image,
 .feature-extended-body {
 	width: 100%
+}
+
+.feature-extended-image {
+	display: flex;
+	justify-content: center;
+}
+
+.hand{
+	height: 300px;
+	width: 300px;
+}
+
+.brief{
+	height: 250px;
+	width: 250px;
+}
+.wereld{
+	width: 250px;
+	height: 250px;
+}
+
+.kaart{
+	width: 220px;
+	height: 220px;
+}
+
+@media (min-width:700px){
+	.brief{
+		width: 300px;
+		height: 300px;
+	}
+
+	.wereld{
+		width: 300px;
+		height: 300px;
+	}
+
+	.hand{
+		height: 350px;
+		width: 350px;
+	}
+
+	.kaart{
+		width: 300px;
+		height: 300px;
+	}
+	
 }
 
 .feature-extended-image {
